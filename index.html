@@ -66,7 +66,13 @@
       background-image: url(trash can.png);
   }
     
-      
+      .trash-can{
+         position: absolute;
+     height: 50px;
+        top: 350px;
+        left: 45vw;
+        cursor: pointer;
+      }   
    
     
     
@@ -87,13 +93,26 @@
   <h1>
    The Trash Project
     </h1>     
-   <button class="trash-can part2">Trashcan</button>  
+  
    <h2>
      Click the trash can to randomly discover new trash that Lucy collected!
  </h2> 
     
      <img class="trash-can part2" src="trash can.png" alt="trash can">
     
+    <script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library/build/nn.min.js"></script>
+<script>
+    
+  function photoShuffle
+    
+    
+    
+    
+    
+    
+  nn.get('.trash-can').on('click', photoShuffle)
+  
+    </script>
     
     
     
