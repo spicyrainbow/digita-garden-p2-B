@@ -48,11 +48,15 @@
    font-size: 30px;
     position: absolute;
         top: 220px;
-        left: 30vw;
-          padding-top: 30px;
-    
+        left: 50vw;
+         transform: translate(-50%, 0);
+    padding-top: 30px;
+    width: 700px;
+    height: 100px;
+     margin: 20px auto;   
     text-align: center;
-        max-width: 700px;
+    justify-content: center;
+        
     font-family: "Body", serif;
   }
   
@@ -72,15 +76,16 @@
         height: 500px; 
         position: absolute;
         top: 450px;
-        left: 38vw;
-     
+        left: 50vw;
+     transform: translate(-50%, 0);
       } 
         
       .info {
          font-size: 30px;
     position: absolute;
         top: 1000px;
-        left: 43vw;
+        left: 50vw;
+         transform: translate(-50%, 0);
 /*     padding-right: 50px;
     padding-left: 50px; */
     text-align: center;
@@ -88,7 +93,9 @@
     font-family: "Body", serif;
       }
     
-    
+     .sans {
+    font-family: sans;
+  }
     </style>
     
     
@@ -114,7 +121,7 @@
      <img class="trash" src="alaska-mag.jpg" alt="trash">
     
     
-    <p class="info">Story of Lucy's Trash </p>
+    <p class="info">Story of Lucy<span class="sans">'</span>s Trash </p>
     
     <script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library/build/nn.min.js"></script>
 <script>
@@ -122,8 +129,7 @@
   function photoShuffle () {
     // window.alert('hello')
     const files = [
-      { src: '6E2A1667.JPG', text: 'hello' },
-      { src: 'Lucy.png', text: 'Lucy' },
+      
       { src: '36cdafb3b95f8e1781180b7e4c52d0c5.jpg', text: 'Leo and I infront of trash can on graduation day' },
       { src: 'alaska-mag.jpg', text: 'Alaska Magazine I found in Jersey a' },
    { src: 'bold guy mag.jpg', text: 'Vintage Magazine I found in Jersey b' },
