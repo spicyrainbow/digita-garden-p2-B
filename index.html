@@ -35,10 +35,10 @@
         width: 700px;
         height: 100px;
         padding-top: 100px;
-        padding-right: 50px;
-    padding-left: 50px;
+/*         padding-right: 50px;
+    padding-left: 50px; */
 
-        margin: 10px auto;
+        margin: 20px auto;
         justify-content: center;
         font-family: "Gwibble", serif;
         letter-spacing: 10px;
@@ -48,33 +48,45 @@
    font-size: 30px;
     position: absolute;
         top: 220px;
-        left: 25vw;
-    padding-right: 50px;
-    padding-left: 50px;
+        left: 30vw;
+          padding-top: 30px;
+    
     text-align: center;
         max-width: 700px;
     font-family: "Body", serif;
   }
   
     
-    button{
-    position: absolute;
-     height: 50px;
-        top: 350px;
-    left: 45vw;
-        align-items: center;
-      background-image: url(trash can.png);
-  }
+   
     
       .trash-can{
          position: absolute;
      height: 50px;
         top: 350px;
-        left: 45vw;
+        right: 49vw;
         cursor: pointer;
+        
       }   
    
-    
+      .trash {
+        height: 500px; 
+        position: absolute;
+        top: 450px;
+        left: 38vw;
+     
+      } 
+        
+      .info {
+         font-size: 30px;
+    position: absolute;
+        top: 1000px;
+        left: 43vw;
+/*     padding-right: 50px;
+    padding-left: 50px; */
+    text-align: center;
+        max-width: 400px;
+    font-family: "Body", serif;
+      }
     
     
     </style>
@@ -99,8 +111,11 @@
  </h2> 
     
      <img class="trash-can part2" src="trash can.png" alt="trash can">
-     <img class="trash" src="Lucy.png" alt="trash">
-    <p class="info">trash description </p>
+     <img class="trash" src="alaska-mag.jpg" alt="trash">
+    
+    
+    <p class="info">Story of Lucy's Trash </p>
+    
     <script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library/build/nn.min.js"></script>
 <script>
    /* global nn */ 
@@ -109,8 +124,19 @@
     const files = [
       { src: '6E2A1667.JPG', text: 'hello' },
       { src: 'Lucy.png', text: 'Lucy' },
-      { src: '36cdafb3b95f8e1781180b7e4c52d0c5.jpg', text: 'moda' },
-    
+      { src: '36cdafb3b95f8e1781180b7e4c52d0c5.jpg', text: 'Leo and I infront of trash can on graduation day' },
+      { src: 'alaska-mag.jpg', text: 'Alaska Magazine I found in Jersey a' },
+   { src: 'bold guy mag.jpg', text: 'Vintage Magazine I found in Jersey b' },
+      { src: 'comic mag.jpg', text: 'Vintage Magazine I found in Jersey c' },
+      { src: 'difficult-artist.jpg', text: 'artist card I collected in Tate Modern London' },
+      { src: 'letter-collage mag.jpg', text: 'Vintage Magazine I found in Jersey d' },
+      { src: 'pink mag.jpg', text: 'Vintage Magazine I found in Jersey e' },
+      { src: 'purple mag.jpg', text: 'Vintage Magazine I found in Jersey f' },
+       { src: 'mao.jpg', text: 'Fun mao house decor found in Shanghai' },
+      { src: 'we-dont-try.jpg', text: 'Vintage Magazine I found in Jersey g' },
+      
+      
+      
     ]
     const file = nn.random(files)
     nn.get('.trash').src = file.src
