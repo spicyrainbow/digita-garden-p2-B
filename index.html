@@ -99,12 +99,24 @@
  </h2> 
     
      <img class="trash-can part2" src="trash can.png" alt="trash can">
-    
+     <img class="trash" src="Lucy.png" alt="trash">
+    <p class="info">trash description </p>
     <script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library/build/nn.min.js"></script>
 <script>
+   /* global nn */ 
+  function photoShuffle () {
+    // window.alert('hello')
+    const files = [
+      { src: '6E2A1667.JPG', text: 'hello' },
+      { src: 'Lucy.png', text: 'Lucy' },
+      { src: '36cdafb3b95f8e1781180b7e4c52d0c5.jpg', text: 'moda' },
     
-  function photoShuffle
-    
+    ]
+    const file = nn.random(files)
+    nn.get('.trash').src = file.src
+    nn.get('.info').textContent = file.text
+   
+  }    
     
     
     
